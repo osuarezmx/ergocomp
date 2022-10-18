@@ -199,18 +199,23 @@ img {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin-bottom: 80px;
+    height: 100vh;
 }
 .hero-contenido {
     display: grid;
     grid-auto-flow: row;
     align-content: center;
     gap: 20px;
+    margin-left: 5%;
 }
 .hero-btn {
     margin-top: 20px;
 }
-.hero-img {
+.hero-img iframe{
+    width: 100%;
+    height: min-content;
     object-fit: cover;
+    background-image: url(https://www.youtube.com/watch?v=_4uwTXPF0R0&ab_channel=Ergocomp);
 }
 
 /**-------Acerca--------**/
@@ -243,6 +248,19 @@ img {
 }
 .catalogo-grid {
     grid-template-columns: repeat(5, 1fr);
+}
+
+/**-------Video--------**/
+.video {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+}
+.video iframe {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    margin-bottom: 80px;
 }
 
 /**-------Contacto--------**/
