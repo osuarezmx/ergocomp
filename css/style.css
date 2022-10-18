@@ -1,0 +1,273 @@
+:root {
+    --fuenteHeading: 'IBM Plex Sans', sans-serif;
+    --fuenteParrafo: 'Archivo', sans-serif;
+
+    --clr-primario: #202f8b;
+    --clr-secundario: #90c52a;
+    --clr-terciario: #8a84e2;
+    --clr-claro: #fbfaf8;
+    --clr-oscuro: #000500;
+    --clr-texto: #717471;
+}
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    background-color: var(--clr-claro);
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+h1 {
+    font-size: 12rem;
+}
+h2 {
+    font-size: 9rem;
+}
+h3 {
+    font-size: 3.8rem;
+    letter-spacing: .1rem;
+    line-height: 1.2;
+}
+*:before, *:after {
+    box-sizing: inherit;
+}
+/**-------Globales--------**/
+.contenedor {
+    max-width: 1440px;
+    width: 95%;
+    margin: 0 auto;
+}
+a {
+    text-decoration: none;
+
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+img {
+    max-width: 100%;
+}
+.heading {
+    font-family: var(--fuenteHeading);
+    font-weight: 400;
+    color: var(--clr-primario);
+    line-height: .9;
+}
+.subheading {
+    font-family: var(--fuenteParrafo);
+    font-weight: 400;
+    color: var(--clr-terciario);
+}
+.texto {
+    font-family: var(--fuenteParrafo);
+    font-weight: 400;
+    font-size: 2rem;
+    color: var(--clr-texto);
+    line-height: 1.4;
+    letter-spacing: 1px;
+}
+.enlace {
+    font-family: var(--fuenteHeading);
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: var(--clr-primario);
+    transition: .3s ease-out;
+}
+.enlace:hover {
+    color: var(--clr-terciario)
+}
+.btn-01 {
+    background-color: var(--clr-secundario);
+    padding: 1.2rem 3rem;
+    border-radius: 25px;
+    border: none;
+    color: var(--clr-claro);
+}
+.btn-01:hover {
+    background-color: var(--clr-primario);
+}
+
+/**-------Header--------**/
+.header {
+    position:static;
+    padding-block: 35px;
+}
+.header-grid {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-evenly;
+}
+.nav-enlaces {
+    display: flex;
+    justify-content: space-between;
+}
+
+/**-------Hero--------**/
+.hero {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 80px;
+}
+.hero-contenido {
+    display: grid;
+    grid-auto-flow: row;
+    align-content: center;
+    gap: 20px;
+}
+.hero-btn {
+    margin-top: 20px;
+}
+.hero-img {
+    object-fit: cover;
+}
+
+/**-------Acerca--------**/
+.acerca {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 40px;
+    margin-bottom: 80px;
+}
+.acerca-contenido {
+    display: grid;
+    grid-auto-flow: row;
+    gap: 20px;
+}
+.acerca-img {
+    object-fit: cover;
+}
+.acerca-kpis {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-around;
+}
+
+/**-------Catálogo--------**/
+.catalogo {
+    margin-bottom: 80px;
+}
+.catalogo .heading {
+    text-align: center;
+}
+.catalogo-grid {
+    grid-template-columns: repeat(5, 1fr);
+}
+
+/**-------Contacto--------**/
+.contacto {
+    background-color: #fff;
+    
+}
+.contacto-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 40px;
+}
+.contacto-heading {
+    font-size: 4.8rem;
+}
+.formulario-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/**-------Footer--------**/
+.footer {
+    margin: 50px;
+}
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
