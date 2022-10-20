@@ -746,7 +746,6 @@ img {
   .footer-grid {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: min-content;
-    align-items: unset;
   }
   .footer-contacto {
     grid-template-columns: 1fr;
@@ -759,6 +758,11 @@ img {
   .footer-redes {
     grid-column: unset;
     grid-row: unset;
-    margin: 20px 0 0 0;
+  }
+  .footer-catalogo, .footer-enlaces {
+    display: block;
+  }
+  .enlaces-lista, .lista {
+    
   }
 }
