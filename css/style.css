@@ -848,10 +848,8 @@ img {
     grid-column: unset;
     grid-row: unset;
   }
-  .footer-catalogo, .footer-enlaces {
-    display: block;
-  }
-  .enlaces-lista, .lista {
-    
+  .footer-catalogo .heading, .footer-enlaces .heading {
+    position: relative;
+    top: -35px
   }
 }
