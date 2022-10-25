@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ergocomp</title>
+    <!-- Box Icons -->
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,176 +19,170 @@
 <body>
     <header class="header">
         <div class="contenedor">
-            <div class="header-grid">
-                <div class="header-nav">
-                    <div class="nav-logo">
-                        Ergocomp
-                    </div>
-                </div>
-                <div class="nav-menu">
-                    <ul class="menu">
-                        <li class="menu-elemento">
-                            <a href="#" class="menu-enlace enlace">Sobre Ergocomp</a>
-                        </li>
-                        <li class="menu-elemento">
-                            <a href="#" class="menu-enlace enlace">Catálogo</a>
-                        </li>
-                        <li class="menu-elemento">
-                            <a href="#" class="menu-enlace enlace">Contacto</a>
-                        </li>
-                    </ul>
+            <nav id="nav" class="header-nav">
+                <div class="nav-logo">
+                    <img src="./img/ergocomp-logo-001.png" alt="">
                 </div>
                 <div class="nav-enlaces">
-                    <div class="iconos-top">
-                        <img src="" alt="">
-                        <img src="" alt="">
-                    </div>
+                    <a href="tel:+5218132594754" class="enlace top-telefono">
+                        <box-icon name='phone' class="top-icono"></box-icon> +52 1 81 3259 4754
+                    </a>
                     <div class="nav-btn">
-                        <a href="#" class="btn-01 enlace">Escríbenos</a>
+                        <a href="#formulario" class="btn-01 enlace">Escríbenos</a>
                     </div>
                 </div>
-            </div>
+                <a href="#nav" class="menu-hamburguer">
+                    <img src="./img/icono-menu.svg" alt="" class="menu-icono">
+                </a>
+                <a href="#" class="menu-close">
+                    <img src="./img/icono-cerrar.svg" alt="" class="menu-icono">
+                </a>
+            </nav>
         </div>
     </header>
     <main>
         <section class="hero">
-            <div class="hero-contenido contenedor">
-                <h1 class="heading">Ergocomp</h1>
-                <h3 class="subheading">Fabricantes y distribuidores de componentes para sillas.</h3>
-                <div class="hero-btn">
-                    <a href="#" class="btn-01 enlace">Ver más</a>
+            <div class="hero-grid contenedor">
+                <div class="hero-contenido">
+                    <h1 class="heading fnt-size-xl">Ergocomp</h1>
+                    <h3 class="subheading fnt-size-s">Fabricantes y distribuidores de componentes para sillas.</h3>
+                    <div class="hero-btn">
+                        <a href="#" class="btn-01 enlace">Ver más</a>
+                    </div>
                 </div>
-            </div>
-            <div class="hero-img">
-                <img src="./img/imagen-muestra-cuadrado.jpg" alt="">
+                <div id="formulario" class="hero-form">
+                    <h3 class="subheading fnt-size-s">Ponemos a tu disposición el siguiente formulario de contacto.</h3>
+                    <form action="">
+                        <div class="form-grid">
+                            <div class="form-elemento">
+                                <label for="" class="form-label">Nombre</label>
+                                <input type="text" name="" id="" class="form-input" placeholder="Nombre Apellido">
+                            </div>
+                            <div class="form-elemento">
+                                <label for="" class="form-label">Correo</label>
+                                <input type="email" name="" id="" class="form-input" placeholder="correo@empresa.com">
+                            </div>
+                        </div>
+                        <div class="form-grid">
+                            <div class="form-elemento">
+                                <label for="" class="form-label">Empresa</label>
+                                <input type="text" name="" id="" class="form-input" placeholder="Nombre de la empresa">
+                            </div>
+                            <div class="form-elemento">
+                                <label for="" class="form-label">Teléfono</label>
+                                <input type="tel" name="" id="" class="form-input" placeholder="Número de teléfono">
+                            </div>
+                        </div>
+                        <div class="form-elemento">
+                            <label for="" class="form-label">Mensaje</label>
+                            <textarea name="" id="" class="form-input" placeholder="Escribe tu mensaje"></textarea>
+                        </div>
+                        <div class="form-elemento form-btn">
+                            <input type="submit" value="Enviar" class="btn-01 enlace">
+                        </div>
+                    </form>
+                </div>
             </div>
         </section>
         <section class="acerca">
             <div class="acerca-img">
-                <img src="./img/imagen-muestra-vertical-02.jpg" alt="">
+                <img src="https://images.pexels.com/photos/12269763/pexels-photo-12269763.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
             </div>
             <div class="acerca-contenido contenedor">
-                <h2 class="heading">Componentes ergonómicos</h2>
+                <h2 class="heading fnt-size-x">Componentes ergonómicos</h2>
                 <p class="texto">Somos fabricantes y distribuidores de componentes para sillas. Calidad y servicio son los valores de la filosofía ERGOCOMP. Una elección ganadora que ha permitido a la compañía crecer y volverse una organización dinámica y eficiente incorporando nuevos artículos en el ramo de los componentes y partes para sillería de oficina y mobiliario.</p>
                 <div class="acerca-kpis">
                     <div class="kpi-card">
                         <div class="kpi-icono">
-                            <img src="" alt="">
+                            <box-icon name='bookmarks' ></box-icon>
                         </div>
-                        <div class="kpi-titulo">Estilo</div>
+                        <div class="kpi-titulo fnt-size-s">Estilo</div>
                     </div>
                     <div class="kpi-card">
                         <div class="kpi-icono">
-                            <img src="" alt="">
+                            <box-icon name='certification'></box-icon>
                         </div>
-                        <div class="kpi-titulo">Calidad</div>
+                        <div class="kpi-titulo fnt-size-s">Calidad</div>
                     </div>
                     <div class="kpi-card">
                         <div class="kpi-icono">
-                            <img src="" alt="">
+                            <box-icon name='pen'></box-icon>
                         </div>
-                        <div class="kpi-titulo">Diseño</div>
+                        <div class="kpi-titulo fnt-size-s">Diseño</div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="catalogo">
-            <h2 class="heading">Nuestro catálogo</h2>
-            <div class="contendor">
-                <div class="catalogo-grid"></div>
-            </div>  
+        <section class="catalogo contenedor">
+                <h2 class="heading fnt-size-x catalogo-heading">Nuestro catálogo</h2>
+                <div class="catalogo-grid">
+                    <div class="catalogo-card">
+                        <img src="./img/Blitz.jpg" alt="" class="catalogo-img">
+                        <h3 class="card-title heading">CEO</h3>
+                    </div>
+                    <div class="catalogo-card">
+                        <img src="./img/Duke.jpg" alt="" class="catalogo-img">
+                        <h3 class="card-title heading">Dirección</h3>
+                    </div>
+                    <div class="catalogo-card">
+                        <img src="./img/Living.jpg" alt="" class="catalogo-img">
+                        <h3 class="card-title heading">Ejecutiva</h3>
+                    </div>
+                    <div class="catalogo-card">
+                        <img src="./img/Bini.jpg" alt="" class="catalogo-img">
+                        <h3 class="card-title heading">Operativa</h3>
+                    </div>
+                    <div class="catalogo-card">
+                        <img src="./img/COMUNIDAD-9-CAT.jpg" alt="" class="catalogo-img">
+                        <h3 class="card-title heading">Comunidad</h3>
+                    </div>
+                    <div class="catalogo-card">
+                        <img src="./img/COMUNIDAD-PLUS-8-CAT.jpg" alt="" class="catalogo-img">
+                        <h3 class="card-title heading">Comunidad Plus</h3>
+                    </div>
+                    <div class="catalogo-card">
+                        <img src="./img/BASICA-3-CAT-.jpg" alt="" class="catalogo-img">
+                        <h3 class="card-title heading">Basic</h3>
+                    </div>
+                    <div class="catalogo-card">
+                        <img src="./img/Iso-3.jpg" alt="" class="catalogo-img">
+                        <h3 class="card-title heading">Escolar</h3>
+                    </div>
+                    <div class="catalogo-card">
+                        <img src="./img/BANCAS-6-CAT.jpg" alt="" class="catalogo-img">
+                        <h3 class="card-title heading">Bancas</h3>
+                    </div>
+                    <div class="catalogo-card">
+                        <img src="./img/Kansas.jpg" alt="" class="catalogo-img">
+                        <h3 class="card-title heading">Componentes</h3>
+                    </div>
+                </div> 
         </section>
         <section class="video contenedor">
+            <div class="video-contenido">
+                <h2 class="heading fnt-size-x">Calidad en componentes para sillas</h2>
+                <h4 class="subheading fnt-size-s">Soluciones innovadoras y funcionales</h4>
+            </div>
             <div class="video-contenedor">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/_4uwTXPF0R0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-            <div class="video-contenido">
-                <h2 class="heading">Lorem, ipsum dolor.</h2>
-            </div>
-        </section>
-        <section class="contacto contenedor">
-                <div class="contacto-grid">
-                    <div class="contacto-contenido">
-                        <h2 class="contacto-heading heading">Escríbenos</h2>
-                        <h3 class="subheading">Ponemos a tu disposición el siguiente formulario de contacto.</h3>
-                    </div>
-                    <div class="contacto-formulario">
-                        <form action="">
-                            <div class="formulario-grid">
-                                <div class="formulario-elemento">
-                                    <label for="">Nombre</label>
-                                    <input type="text" name="" id="">
-                                </div>
-                                <div class="formulario-elemento">
-                                    <label for="">Correo</label>
-                                    <input type="email" name="" id="">
-                                </div>
-                            </div>
-                            <div class="formulario-grid">
-                                <div class="formulario-elemento">
-                                    <label for="">Empresa</label>
-                                    <input type="text" name="" id="">
-                                </div>
-                                <div class="formulario-elemento">
-                                    <label for="">Teléfono</label>
-                                    <input type="tel" name="" id="">
-                                </div>
-                            </div>
-                            <div class="formulario-elemento">
-                                <label for="">Mensaje</label>
-                                <textarea name="" id="" cols="30" rows="10"></textarea>
-                            </div>
-                            <div class="formulario-elemento">
-                                <input type="submit" value="Enviar" class="btn-01 enlace">
-                            </div>
-                        </form>
-                    </div>
-                </div>
         </section>
     </main>
     <footer class="footer contenedor">
         <div class="footer-grid">
-            <div class="footer-contacto">
-                <img src="" alt="">
-                <div class="footer-datos">
-                    <a href="#" class="enlace footer-enlace">Dirección</a>
-                    <a href="#" class="enlace footer-enlace">Teléfono</a>
-                    <a href="#" class="enlace footer-enlace">Correo</a>
-                </div>
-                <div class="footer-redes">
-                    <a href="#" class="enlace footer-enlace">Dirección</a>
-                    <a href="#" class="enlace footer-enlace">Teléfono</a>
-                </div>
-            </div>
-            <div class="footer-catalogo">
-                <div class="footer-lista">
-                    <div class="lista-izq">
-                        <a href="#" class="enlace footer-enlace">CEO</a>
-                        <a href="#" class="enlace footer-enlace">Dirección</a>
-                        <a href="#" class="enlace footer-enlace">Ejecutiva</a>
-                        <a href="#" class="enlace footer-enlace">Operativa</a>
-                        <a href="#" class="enlace footer-enlace">Comunidad</a>
-                    </div>
-                    <div class="lista-der">
-                        <a href="#" class="enlace footer-enlace">Comunidad Plus</a>
-                        <a href="#" class="enlace footer-enlace">Basic</a>
-                        <a href="#" class="enlace footer-enlace">Escolar</a>
-                        <a href="#" class="enlace footer-enlace">Bancas</a>
-                        <a href="#" class="enlace footer-enlace">Componentes</a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-enlaces">
-                <div class="footer-lista">
-                    <a href="#" class="enlace footer-enlace">Aviso de privacidad</a>
-                    <a href="#" class="enlace footer-enlace">Bolsa de trabajo</a>
-                    <a href="#" class="enlace footer-enlace">Promociones</a>
-                </div>
-            </div>
+            <a href="https://goo.gl/maps/Spif4tKiXwAf5xTbA" class="enlace footer-enlace">Prolongación Ruíz Cortines 2941-C, Col. Policía Auxiliar, Guadalupe 67114, NL, MX</a>
+            <a href="tel:+5218132594754" class="enlace footer-enlace">
+                <box-icon name='phone' class="top-icono"></box-icon> +52 1 81 3259 4754
+            </a>
+            <a href="tel:+5218132594754" class="enlace footer-enlace">
+                <box-icon name='whatsapp' type='logo' class="top-icono"></box-icon> +52 1 81 3259 4754
+            </a>
         </div>
-        <div class="footer-bottom">
+        <div class="footer-bottom subheading fnt-size-xs">
             © 2022 - Ergocomp | Sitio creado en <a href="#">Direnet</a>
         </div>
     </footer>
+
+    <script src="./js/index.js"></script>
 </body>
 </html>
