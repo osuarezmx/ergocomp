@@ -714,7 +714,7 @@ color: var(--clr-secundario);
 
 .whatsapp-float {
   position: fixed;
-  inset: auto 10px 15rem auto;
+  inset: auto 10px 10rem auto;
   z-index: 4;
 }
 .whatsapp-icono {
@@ -728,5 +728,4 @@ color: var(--clr-secundario);
 }
 .whatsapp-btn:hover .whatsapp-icono {
   background-color: var(--clr-texto);
-
 }
